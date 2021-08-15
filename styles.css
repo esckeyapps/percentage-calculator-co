@@ -9,84 +9,6 @@ html {
     font-family: 'Nunito', sans-serif;
 }
 
-header {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px;
-    font-size: 1.5rem;
-    background-color: rgba(77, 91, 106,1);
-    color: white;
-    box-shadow: 5px 10px 8px rgba(0,0,0,0.2);
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.headline {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.navbar {
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    text-decoration: none;
-    font-weight: normal;
-    padding: 0px 25px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 0px 25px;
-}
-  
-.dropdown {
-    display: inline;
-}
-  
-.dropdown .dropbtn {
-    border: none;
-    outline: none;
-    display: inline-block;
-    margin: 0;
-    text-decoration: none;
-    background-color: rgba(77, 91, 106,1);
-    color: #ffffff;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-}
-  
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    display: block;
-    text-align: left;
-    font-size: 1rem;
-}
-  
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -169,10 +91,4 @@ main {
 
 .button:focus {
     outline: none;
-}
-
-footer {
-    bottom: 0;
-    font-size: 0.5rem;
-    padding: 25px;
 }

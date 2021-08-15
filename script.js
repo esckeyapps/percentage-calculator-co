@@ -26,12 +26,64 @@ let calc3 = () => {
   }
 }
 
+let calc4 = () => {
+  let n7 = document.getElementById("n7").value;
+  let n8 = document.getElementById("n8").value;
+  if (n7 && n8)
+  {
+  let result4 = document.getElementById("result4").value = Math.round((n7/n8)*100);
+  }
+}
+
 document.getElementById("button1").addEventListener("click", calc1);
 document.getElementById("button2").addEventListener("click", calc2);
 document.getElementById("button3").addEventListener("click", calc3);
+document.getElementById("button4").addEventListener("click", calc4);
+
+document.getElementById("n1").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc1();
+  }
+});
+document.getElementById("n2").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc1();
+  }
+});
+document.getElementById("n3").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc2();
+  }
+});
+document.getElementById("n4").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc2();
+  }
+});
+document.getElementById("n5").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc3();
+  }
+});
+document.getElementById("n6").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc3();
+  }
+});
+document.getElementById("n7").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc4();
+  }
+});
+document.getElementById("n8").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc4();
+  }
+});
+
 
 // Statistical Significance Calculator
-
+/*
 
 function normDist(x, mean, std) {
   var x = (x - mean) / std
@@ -60,17 +112,4 @@ let pValue = normDist(zScore,0,1)
 let confidence = ((1 - pValue) * 100).toFixed(0) + "%"
  
 console.log(confidence)
-
-
-
-
-
-
-/*   <div class="wave">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
-<path fill="#00cba9" fill-opacity="1"
-    d="M0,64L120,69.3C240,75,480,85,720,80C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-</path>
-</svg>
-</div>
 */
