@@ -7,19 +7,32 @@
 html {
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
+    background: linear-gradient(180deg, #36517D 50%, #F1F4F6 50%);
 }
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin: 0 15% 5% 15%;
 }
 
 .subheading {
-    margin-top: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
     margin-bottom: 25px;
-    text-align: center;
+    text-align: left;
+    color: white;
+}
+
+.subheading h1 {
+    font-size: 26px;
 }
 
 .subheading p {
@@ -31,12 +44,20 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 100%;
     max-width: 1000px;
-    margin: 5px;
-    background-color:rgba(220,220,220,0.4);
-    padding: 5px;
-    border-radius: 4px;
+    padding: 0 0 10 0;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    box-shadow: -1px 15px 25px -10px rgba(0,0,0,0.5);
+}
+
+.form h2 {
+    width: 100%;
+    padding: 10 0 0 10;
+    margin: 5 5 0 5;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .values {
@@ -48,10 +69,14 @@ main {
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 
 .values p {
     min-width: max-content;
+
 }
 
 .result {
@@ -60,17 +85,22 @@ main {
     justify-content: right;
     margin: 5px;
     padding: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .input {
     margin: 5px;
     padding: 5px;
+    width: 100px;
+    border-radius: 5%;
+    border: 1px solid gainsboro;
 }
 
 .button {
     margin: 5px;
     height: 30px;
-    background-color: #627488;
+    background-color: #36747D;
     width: 100px;
     color: white;
     border-radius: 5%;
