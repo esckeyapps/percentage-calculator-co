@@ -89,6 +89,16 @@ main {
     padding-bottom: 0;
 }
 
+.phrase {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
 .input {
     margin: 5px;
     padding: 5px;
@@ -103,14 +113,16 @@ main {
     background-color: #36747D;
     width: 100px;
     color: white;
-    border-radius: 5%;
+    border-radius: 2%;
     border: none;
     box-shadow:black;
 }
 
+@media (hover: hover) {
 .button:hover {
-    cursor: pointer;
+    cursor:pointer ;
     background-color: #7C8EA1;
+}
 }
 
 .button:active {
@@ -122,3 +134,25 @@ main {
 .button:focus {
     outline: none;
 }
+
+@media all and (min-width:0px) and (max-width: 600px) {
+
+    main {
+        margin: 0 10% 5% 10%;
+    }
+
+    .phrase {
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+
+    .result {
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+
+  }

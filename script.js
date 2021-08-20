@@ -4,7 +4,7 @@ let calc1 = () => {
     let n2 = document.getElementById("n2").value;
     if (n1 && n2) 
     {
-      let result1 = document.getElementById("result1").value = Math.round((n1 / 100) * n2);
+        let result1 = document.getElementById("result1").value = Math.round((n1 / 100) * n2);
     }
 }
 
