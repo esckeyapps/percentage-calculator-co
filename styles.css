@@ -105,6 +105,7 @@ main {
     width: 100px;
     border-radius: 5%;
     border: 1px solid gainsboro;
+    box-shadow: none;
 }
 
 .button {
