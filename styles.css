@@ -18,7 +18,7 @@ main {
     margin: 0 15% 5% 15%;
 }
 
-.subheading {
+.heading {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -31,11 +31,11 @@ main {
     color: white;
 }
 
-.subheading h1 {
+.heading h1 {
     font-size: 26px;
 }
 
-.subheading p {
+.heading p {
     padding-top: 10px;
 }
 
