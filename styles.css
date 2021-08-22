@@ -137,6 +137,22 @@ main {
     outline: none;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15% 5% 15%;
+}
+
+#logo {
+    height: 30px;
+}
+
+#logo:hover{
+    transform: rotate(45deg);
+}
+
 @media all and (min-width:0px) and (max-width: 600px) {
 
     html {
