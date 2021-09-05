@@ -35,10 +35,20 @@ let calc4 = () => {
   }
 }
 
+let calc5 = () => {
+  let n9 = document.getElementById("n9").value;
+  let n10 = document.getElementById("n10").value;
+  if (n9 && n10)
+  {
+  let result5 = document.getElementById("result5").value = Math.round((n9/n10)*100) + '%';
+  }
+}
+
 document.getElementById("button1").addEventListener("click", calc1);
 document.getElementById("button2").addEventListener("click", calc2);
 document.getElementById("button3").addEventListener("click", calc3);
 document.getElementById("button4").addEventListener("click", calc4);
+document.getElementById("button5").addEventListener("click", calc5);
 
 document.getElementById("n1").addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
@@ -78,6 +88,16 @@ document.getElementById("n7").addEventListener('keypress', function (e) {
 document.getElementById("n8").addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
     calc4();
+  }
+});
+document.getElementById("n9").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc5();
+  }
+});
+document.getElementById("n10").addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    calc5();
   }
 });
 
